@@ -29,5 +29,12 @@ module GrapeStudy
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    config.generators do |g|
+      g.test_framework :rspec, fixture: true
+
+      # 모델 하나 추가할때마다 factory 파일 생성
+      g.fixture_replacement :factory_bot, dir: 'spec/factories'
+    end
   end
 end
