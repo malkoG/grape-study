@@ -1,4 +1,5 @@
 class Survey < ApplicationRecord
+  include ActiveModel::Serializers::Xml
   before_create :generate_code
 
   has_many :question_list, foreign_key: "survey_id", class_name: "Question"

@@ -36,6 +36,9 @@ gem 'jbuilder', '~> 2.5'
 # for api server implementation
 gem 'grape'
 
+# to support to_xml
+gem 'activemodel-serializers-xml'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
