@@ -1,6 +1,6 @@
 class API < Grape::API
   prefix 'api'
-  format :json
+  mount V3::Base
 
   get :hello_world do
     { message: 'hello' }
