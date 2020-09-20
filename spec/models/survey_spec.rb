@@ -12,7 +12,7 @@ RSpec.describe Survey, type: :model do
             question_list: [
               {
                 title: "hello",
-                description: "hello world",
+                desc: "hello world",
                 question_type: 'Long Answer',
                 options: [
                   {title: 'ttt', desc: 'eee'},
@@ -22,7 +22,7 @@ RSpec.describe Survey, type: :model do
               },
               {
                 title: "hello 2",
-                description: "hello world",
+                desc: "hello world",
                 question_type: 'Long Answer',
                 options: [
                   {title: 'ttt', desc: 'eee'},

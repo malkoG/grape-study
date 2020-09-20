@@ -25,7 +25,7 @@ ActiveRecord::Schema.define(version: 2020_09_20_150619) do
 
   create_table "questions", force: :cascade do |t|
     t.string "title"
-    t.string "description"
+    t.string "desc"
     t.string "question_type"
     t.json "options"
     t.bigint "survey_id"

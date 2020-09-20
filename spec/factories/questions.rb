@@ -1,7 +1,7 @@
 FactoryBot.define do
   factory :question do
     title { "MyString" }
-    description { "MyString" }
+    desc { "MyString" }
     question_type { "" }
     options { [] }
     survey { nil }
