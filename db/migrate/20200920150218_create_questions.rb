@@ -4,7 +4,7 @@ class CreateQuestions < ActiveRecord::Migration[5.2]
       t.string :title
       t.string :description
       t.string :question_type
-      t.json :example
+      t.json :options
       t.references :survey, foreign_key: true
 
       t.timestamps

@@ -3,7 +3,7 @@ FactoryBot.define do
     title { "MyString" }
     description { "MyString" }
     question_type { "" }
-    example { "" }
+    options { [] }
     survey { nil }
   end
 end

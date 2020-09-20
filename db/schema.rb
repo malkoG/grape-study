@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(version: 2020_09_20_150619) do
     t.string "title"
     t.string "description"
     t.string "question_type"
-    t.json "example"
+    t.json "options"
     t.bigint "survey_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

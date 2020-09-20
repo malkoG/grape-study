@@ -14,13 +14,21 @@ RSpec.describe Survey, type: :model do
                 title: "hello",
                 description: "hello world",
                 question_type: 'Long Answer',
-                example: "HELL WORLD"
+                options: [
+                  {title: 'ttt', desc: 'eee'},
+                  {title: 'ttt', desc: 'eee'},
+                  {title: 'ttt', desc: 'eee'}
+                ]
               },
               {
                 title: "hello 2",
                 description: "hello world",
                 question_type: 'Long Answer',
-                example: "HELL WORLD"
+                options: [
+                  {title: 'ttt', desc: 'eee'},
+                  {title: 'ttt', desc: 'eee'},
+                  {title: 'ttt', desc: 'eee'}
+                ]
               }
             ]
           }
