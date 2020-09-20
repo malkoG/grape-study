@@ -21,7 +21,7 @@ class Survey < ApplicationRecord
 
   private
     def generate_code
-      hash = Base64.encode64(title + Time.zone.now.to_i.to_s)
+      hash = Base64.strict_encode64(title + Time.zone.now.to_i.to_s)
       self.code = hash
     end
 end
