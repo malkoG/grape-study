@@ -11,13 +11,13 @@ RSpec.describe Survey, type: :model do
             code: '0x123azsad',
             question_list: [
               {
-                question_text: "hello",
+                title: "hello",
                 description: "hello world",
                 question_type: 'Long Answer',
                 example: "HELL WORLD"
               },
               {
-                question_text: "hello 2",
+                title: "hello 2",
                 description: "hello world",
                 question_type: 'Long Answer',
                 example: "HELL WORLD"
@@ -30,8 +30,8 @@ RSpec.describe Survey, type: :model do
         survey = Survey.new(survey_params)
 
         expect(survey.save).to eq(true)
-        expect(survey.question_list.first.question_text).to eq('hello')
-        expect(survey.question_list.last.question_text).to eq('hello 2')
+        expect(survey.question_list.first.title).to eq('hello')
+        expect(survey.question_list.last.title).to eq('hello 2')
       end
     end
   end

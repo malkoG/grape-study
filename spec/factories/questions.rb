@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :question do
-    question_text { "MyString" }
+    title { "MyString" }
     description { "MyString" }
     question_type { "" }
     example { "" }

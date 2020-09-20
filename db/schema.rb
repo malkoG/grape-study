@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 2020_09_20_150619) do
   end
 
   create_table "questions", force: :cascade do |t|
-    t.string "question_text"
+    t.string "title"
     t.string "description"
     t.string "question_type"
     t.json "example"
